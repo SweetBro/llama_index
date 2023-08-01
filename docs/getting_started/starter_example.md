@@ -38,6 +38,10 @@ This contains LlamaIndex examples around Paul Graham's essay, ["What I Worked On
 Create a new `.py` file with the following:
 
 ```python
+import os
+import openai
+openai.api_key = "OPEN_API_KEY"
+
 from llama_index import VectorStoreIndex, SimpleDirectoryReader
 
 documents = SimpleDirectoryReader('data').load_data()
